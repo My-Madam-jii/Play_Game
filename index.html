@@ -282,7 +282,8 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-var teksSekarang = 1;const body = document.querySelector("body"); audio = new Audio('' + linkmp3.src); 
+var teksSekarang = 1;const body = document.querySelector("body"); const audio = new Audio(linkmp3.src);
+audio.loop = true; 
 var giftUnlocked = false;
 var swiper = new Swiper(".mySwiper", {
     pagination: {el: ".swiper-pagination", dynamicBullets: false,},
